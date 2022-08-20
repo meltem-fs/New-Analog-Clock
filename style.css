@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  /* background-image: linear-gradient(70deg, black, white); */
+}
+
+.clock {
+  width: 40vw;
+  height: 40vw;
+  /* background-image: url(./ios_clock.svg); */
+  background-color: #fff6f60f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 90%;
+  box-shadow: 0 3em 5.8em;
+  border-radius: 50%;
+  position: relative;
+  outline: 7px;
+  outline-style:solid;
+  outline-color:#5fe8e8;
+  background-position: center;
+  box-shadow: -5px -5px 50px 5px rgb(85, 238, 244), 5px 5px 50px 5px rgb(16, 217, 231);
+}
+
+.hour,
+.minute,
+.second {
+  width: 1%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  transform-origin: bottom;
+  z-index: 2;
+  border-radius: 2em;
+}
+
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 1em;
+  height: 1em;
+  background: rgb(136, 133, 133);
+  border: 1px solid #f4efef;
+  border-radius: 10em;
+  margin: auto;
+  z-index: 10;
+}
+
+.hour {
+  height: 25%;
+  background-color: #ff0000;
+}
+
+.minute {
+  height: 30%;
+  background-color: #ff9900;
+}
+
+.second {
+  height: 45%;
+  background-color: #99ff00;
+  transform-origin: 50% 85%;
+}
